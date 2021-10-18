@@ -10,6 +10,7 @@
     --accent-purple: #6B2E50;
     --accent-orange: #DD5713;
     --accent-pink: #B55896;
+    --card-size: 225px;
 }
 
 @font-face {
@@ -37,7 +38,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #25273a;
     color: #ffffff;
     font-family: 'Gotham-Book', Arial, sans-serif;
@@ -46,7 +47,7 @@ body {
 /* Header */
 
 .my-header {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #D0D0D0;
 }
 
 .sav-navy-bg {
@@ -55,18 +56,109 @@ body {
     font-family: 'Gotham-Book', Arial, sans-serif;
 }
 
-span.navbar-text {
+.border-left {
+    padding-left: 1rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+}
+
+.user-profile {
     cursor: pointer;
 }
 
-.navbar-text i {
+.user-profile i {
     font-size: 26px;
     margin-right: 5px;
+}
+
+/* Header menu */
+.my-header .navbar-nav {
+    margin-left: 5px;
+}
+
+.my-header .navbar-nav .nav-item {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.my-header .navbar-nav .nav-link {
+    color: #D0D0D0;   
+}
+
+.inactiveLink {
+    pointer-events: none;
 }
 
 /* Body */
 
 .main-section {
-    /* background-color: red; */
-    /* height: calc(100% - 87px); */
+    margin-top: 75px;
+}
+
+.main-section .bottom-lead {
+    color: #D0D0D0;
+}
+
+.main-section .card {
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+/* Card */
+
+a.savills-link {
+    text-decoration: none;
+}
+
+.card {
+    height: var(--card-size);
+    width: var(--card-size);
+    color: #fff;
+}
+
+.card.healthcare {
+    background-color: #002244;
+}
+
+.card.senior {
+    background-color: 	#727F8A;
+  }
+  
+  .card.student {
+    background-color: 	#673154;
+  }
+  
+  .card.residential {
+    background-color: 	#A1A7C0;
+  }
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-title {
+    font-size: 50px;
+}
+
+.card .card-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 900px) {
+    .my-header .navbar-nav {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .my-header .navbar-nav {
+        margin-left: 200px;
+    }
 }
