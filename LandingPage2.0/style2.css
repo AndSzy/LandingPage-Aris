@@ -1,0 +1,189 @@
+:root {
+  --primary-yellow: #FFDF00;
+  --primary-red: #CE181E;
+  --primary-navy: #25273A;
+  --secondary-steel-blue: #6A769F;
+  --secondary-cream: #EEE8E3;
+  --secondary-steel-grey: #79828C;
+  --accent-green: #6C9173;
+  --accent-teal: #6499A2;
+  --accent-purple: #6B2E50;
+  --accent-orange: #DD5713;
+  --accent-pink: #B55896;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url("Gotham-Bold.otf") format("opentype"), url("Gotham-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url("Gotham-Medium.otf") format("opentype"), url("Gotham-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url("Gotham-Book.otf") format("opentype"), url("Gotham-BookItalic.otf") format("opentype");
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting heigh to 100% */
+
+/* html, body, #rdMainBody, form[name="rdForm"] {
+    height: 100%;
+} */
+
+/* HEADER - BOOTSTRAP */
+.my-header {
+    z-index: 2;
+    border-bottom: 1px solid #fff;
+}
+
+.sav-navy-bg {
+    background-color: #25273a;
+    color: #ffffff;
+    font-family: 'Gotham-Book', Arial, sans-serif;
+}
+
+.border-left {
+    padding-left: 1rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #ffffff;
+    font-size: 18px;
+}
+
+
+/* BACKGROUND IMAGE */
+
+#main-section-background {
+  background: url(img/london.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#main-section-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #808080;
+  opacity: 0.7;
+  z-index: 1
+}
+
+/* MAIN SECTION */
+
+.col {
+  z-index: 2;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+
+.card-body {
+  min-height: 20vw;
+}
+
+
+/* RESIZING IMAGES */
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+  #container {
+    z-index: 2;
+  }
+
+/* CARD TRANSITION */
+
+.card {
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  color: white;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* CARD BACKGROUND */
+.card-header {
+  width: 100%;
+  height: 15vw;
+}
+.healthcare-card {
+  /* background-color: var(--primary-yellow); */
+  background-color: 	#002244;
+}
+
+/* .senior-card {
+  color: var(--primary-red);
+} */
+
+.senior-card {
+  /* background-color: var(--primary-red); */
+  background-color: 	#727F8A;
+}
+
+.student-card {
+  background-color: 	#673154;
+}
+
+.blank-card {
+  background-color: 	#A1A7C0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+      margin-top: 100px;
+    }
+  }
+
+
+@media (min-width: 1400px) {
+  .card-body {
+    min-height: 10vw;
+  }
+}
+
+  
+

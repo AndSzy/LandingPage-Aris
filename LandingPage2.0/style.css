@@ -1,0 +1,72 @@
+:root {
+    --primary-yellow: #FFDF00;
+    --primary-red: #CE181E;
+    --primary-navy: #25273A;
+    --secondary-steel-blue: #6A769F;
+    --secondary-cream: #EEE8E3;
+    --secondary-steel-grey: #79828C;
+    --accent-green: #6C9173;
+    --accent-teal: #6499A2;
+    --accent-purple: #6B2E50;
+    --accent-orange: #DD5713;
+    --accent-pink: #B55896;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url("Gotham-Bold.otf") format("opentype"), url("Gotham-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url("Gotham-Medium.otf") format("opentype"), url("Gotham-MediumItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url("Gotham-Book.otf") format("opentype"), url("Gotham-BookItalic.otf") format("opentype");
+}
+
+/* Box sizing rules */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #25273a;
+    color: #ffffff;
+    font-family: 'Gotham-Book', Arial, sans-serif;
+}
+
+/* Header */
+
+.my-header {
+    border-bottom: 1px solid #fff;
+}
+
+.sav-navy-bg {
+    background-color: #25273a;
+    color: #ffffff;
+    font-family: 'Gotham-Book', Arial, sans-serif;
+}
+
+span.navbar-text {
+    cursor: pointer;
+}
+
+.navbar-text i {
+    font-size: 26px;
+    margin-right: 5px;
+}
+
+/* Body */
+
+.main-section {
+    /* background-color: red; */
+    /* height: calc(100% - 87px); */
+}
