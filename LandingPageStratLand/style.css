@@ -118,6 +118,10 @@ a.savills-link {
     text-decoration: none;
 }
 
+a.savills-link.dead-link {
+    pointer-events: none;
+}
+
 .card {
     height: var(--card-size);
     width: var(--card-size);
